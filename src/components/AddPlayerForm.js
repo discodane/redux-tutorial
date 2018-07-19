@@ -1,7 +1,7 @@
 import React, {Component, PropTypes} from 'react';
 
 export default class AddPlayerForm extends Component {
-  static propTypes: {
+  static propTypes = {
     onAdd: React.PropTypes.func.isRequired,
   };
 

@@ -15,7 +15,6 @@ class Scoreboard extends Component {
   };
 
   render() {
-
     const {dispatch, players} = this.props;
     const addPlayer = bindActionCreators(PlayerActionCreators.addPlayer, dispatch);
     const removePlayer = bindActionCreators(PlayerActionCreators.removePlayer, dispatch);
@@ -46,7 +45,7 @@ class Scoreboard extends Component {
 
 const mapStateToProps = state => (
   {
-    player: state
+    players: state
   }
 )
 
